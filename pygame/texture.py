@@ -13,11 +13,11 @@ class Texture:
         self.textures['marte'] = self.get_texture(path=self.get_texture_path('marssurface.jpg'))
         self.textures['mercurio'] = self.get_texture(path=self.get_texture_path('Mercury.jpg'))
         self.textures['lua'] = self.get_texture(path=self.get_texture_path('Moon.jpg'))
-        self.textures['netuno'] = self.get_texture(path=self.get_texture_path('13908_Neptune_planet_diff.jpg'))
+        self.textures['netuno'] = self.get_texture(path=self.get_texture_path('Neptune.jpg'))
         self.textures['plutao'] = self.get_texture(path=self.get_texture_path('Pluto.jpg'))
         self.textures['saturno'] = self.get_texture(path=self.get_texture_path('Saturn_diff.jpg'))
         self.textures['sol'] = self.get_texture(path=self.get_texture_path('Sun.jpg'))
-        self.textures['urano'] = self.get_texture(path=self.get_texture_path('Uranus_01.png'))
+        self.textures['urano'] = self.get_texture(path=self.get_texture_path('2k_uranus.jpg'))
         self.textures['venus'] = self.get_texture(path=self.get_texture_path('venusClouds2.jpg'))
 
 

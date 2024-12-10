@@ -17,33 +17,35 @@ class Scene:
         
         ##########################################################################################################################
         #--------------------------- SISTEMA SOLAR SEM ROTAÇÃO E SEM TRANSLAÇÃO / ESCALA E DISTANCIA REAL (obs: ALTERAR A VELOCIDADE NA camera.py)-----------------------#
-        add(Esfera(app, tex_id='sol', pos=(-50, 0, 0), scale=(5, 5, 5)))
-        add(Esfera(app, tex_id='mercurio', pos=(57.9, 0, 0), scale=(0.02, 0.02, 0.02)))
-        add(Esfera(app, tex_id='venus', pos=(108.2, 0, 0), scale=(0.04, 0.04, 0.04)))
-        add(Esfera(app, tex_id='terra', pos=(149.6, 0, 0), scale=(0.05, 0.05, 0.05)))
-        add(Esfera(app, tex_id='lua', pos=(154.9, 0, 0), scale=(0.01, 0.01, 0.01)))
-        add(Esfera(app, tex_id='marte', pos=(227.9, 0, 0), scale=(0.02, 0.02, 0.02)))
-        add(Esfera(app, tex_id='jupiter', pos=(778.5, 0, 0), scale=(0.5, 0.5, 0.5)))
-        add(Esfera(app, tex_id='saturno', pos=(1433.5, 0, 0), scale=(0.4, 0.4, 0.4)))
-        add(Esfera(app, tex_id='urano', pos=(2872.5, 0, 0), scale=(0.2, 0.2, 0.2)))
-        add(Esfera(app, tex_id='netuno', pos=(4495.1, 0, 0), scale=(0.2, 0.2, 0.2)))
-        add(Esfera(app, tex_id='plutao', pos=(5906.4, 0, 0), scale=(0.01, 0.01, 0.01)))
+        # add(Esfera(app, tex_id='sol', pos=(-50, 0, 0), scale=(5, 5, 5)))
+        # add(Esfera(app, tex_id='mercurio', pos=(57.9, 0, 0), scale=(0.02, 0.02, 0.02)))
+        # add(Esfera(app, tex_id='venus', pos=(108.2, 0, 0), scale=(0.04, 0.04, 0.04)))
+        # add(Esfera(app, tex_id='terra', pos=(149.6, 0, 0), scale=(0.05, 0.05, 0.05)))
+        # add(Esfera(app, tex_id='lua', pos=(154.9, 0, 0), scale=(0.01, 0.01, 0.01)))
+        # add(Esfera(app, tex_id='marte', pos=(227.9, 0, 0), scale=(0.02, 0.02, 0.02)))
+        # add(Esfera(app, tex_id='jupiter', pos=(778.5, 0, 0), scale=(0.5, 0.5, 0.5)))
+
+        # add(Saturno(app, tex_id='saturno', pos=(1433.5, 0, 0), rot=(5, 10, 250), scale=(0.02, 0.02, 0.02)))
+
+        # add(Esfera(app, tex_id='urano', pos=(2872.5, 0, 0), scale=(0.2, 0.2, 0.2)))
+        # add(Esfera(app, tex_id='netuno', pos=(4495.1, 0, 0), scale=(0.2, 0.2, 0.2)))
+        # add(Esfera(app, tex_id='plutao', pos=(5906.4, 0, 0), scale=(0.01, 0.01, 0.01)))
 
         ##########################################################################################################################
         #--------------------------- SISTEMA SOLAR COM ROTAÇAO E ESCALA REAL / DISTANCIA FICTICIA ----------------------------------------------------#
-        # add(Esfera(app, tex_id='sol', pos=(-50, 0, 0), scale=(5, 5, 5), rotation_speed=0.01))  # Rotação lenta do Sol
-        # add(Esfera(app, tex_id='mercurio', pos=(50, 0, 0), scale=(0.02, 0.02, 0.02), rotation_speed=0.0012))  # 58,6 dias
-        # add(Esfera(app, tex_id='venus', pos=(100, 0, 0), scale=(0.04, 0.04, 0.04), rotation_speed=0.0002))  # 243 dias
-        # add(Esfera(app, tex_id='terra', pos=(150, 0, 0), scale=(0.05, 0.05, 0.05), rotation_speed=0.1))  # 1 dia
-        # add(Esfera(app, tex_id='lua', pos=(155, 0, 0), scale=(0.01, 0.01, 0.01), rotation_speed=0.004))  # Rotação aproximada da Lua
-        # add(Esfera(app, tex_id='marte', pos=(200, 0, 0), scale=(0.02, 0.02, 0.02), rotation_speed=0.098))  # 1,03 dias
-        # add(Esfera(app, tex_id='jupiter', pos=(250, 0, 0), scale=(0.5, 0.5, 0.5), rotation_speed=2.44))  # 0,41 dias
+        add(Esfera(app, tex_id='sol', pos=(-50, 0, 0), scale=(5, 5, 5), rotation_speed=0.01))  # Rotação lenta do Sol
+        add(Esfera(app, tex_id='mercurio', pos=(50, 0, 0), scale=(0.02, 0.02, 0.02), rotation_speed=0.0012))  # 58,6 dias
+        add(Esfera(app, tex_id='venus', pos=(100, 0, 0), scale=(0.04, 0.04, 0.04), rotation_speed=0.0002))  # 243 dias
+        add(Esfera(app, tex_id='terra', pos=(150, 0, 0), scale=(0.05, 0.05, 0.05), rotation_speed=0.1))  # 1 dia
+        add(Esfera(app, tex_id='lua', pos=(155, 0, 0), scale=(0.01, 0.01, 0.01), rotation_speed=0.004))  # Rotação aproximada da Lua
+        add(Esfera(app, tex_id='marte', pos=(200, 0, 0), scale=(0.02, 0.02, 0.02), rotation_speed=0.098))  # 1,03 dias
+        add(Esfera(app, tex_id='jupiter', pos=(250, 0, 0), scale=(0.5, 0.5, 0.5), rotation_speed=2.44))  # 0,41 dias
 
-        # add(Saturno(app, tex_id='saturno', pos=(300, 0, 0), rot=(5, 10, 250), scale=(0.02, 0.02, 0.02), rotation_speed=2.08))  # 0,45 dias
+        add(Saturno(app, tex_id='saturno', pos=(300, 0, 0), rot=(5, 10, 250), scale=(0.02, 0.02, 0.02), rotation_speed=2.08))  # 0,45 dias
 
-        # add(Esfera(app, tex_id='urano', pos=(350, 0, 0), scale=(0.2, 0.2, 0.2), rotation_speed=0.87))  # 0,72 dias
-        # add(Esfera(app, tex_id='netuno', pos=(400, 0, 0), scale=(0.2, 0.2, 0.2), rotation_speed=0.94))  # 0,67 dias
-        # add(Esfera(app, tex_id='plutao', pos=(450, 0, 0), scale=(0.01, 0.01, 0.01), rotation_speed=0.003))  # Rotação lenta estimada
+        add(Esfera(app, tex_id='urano', pos=(350, 0, 0), scale=(0.2, 0.2, 0.2), rotation_speed=0.87))  # 0,72 dias
+        add(Esfera(app, tex_id='netuno', pos=(400, 0, 0), scale=(0.2, 0.2, 0.2), rotation_speed=0.94))  # 0,67 dias
+        add(Esfera(app, tex_id='plutao', pos=(450, 0, 0), scale=(0.01, 0.01, 0.01), rotation_speed=0.003))  # Rotação lenta estimada
         ##########################################################################################################################
 
         ##########################################################################################################################
