@@ -1,0 +1,15 @@
+{
+  "created_at": "2024-12-09T23:38:10.881542",
+  "version": "0.1",
+  "mtllibs": [
+    "13884_UFO_Saucer_v1_l2.mtl"
+  ],
+  "vertex_buffers": [
+    {
+      "material": "13884_metal",
+      "vertex_format": "T2F_N3F_V3F",
+      "byte_offset": 0,
+      "byte_length": 7231488
+    }
+  ]
+}

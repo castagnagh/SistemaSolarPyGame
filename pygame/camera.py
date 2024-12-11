@@ -2,10 +2,10 @@ import glm
 import pygame as pg
 
 FOV = 90
-NEAR = 0.1  # Mantenha pequeno para proximidade
+NEAR = 0.01  # Mantenha pequeno para proximidade
 FAR = 1000  # Aumente para um valor maior, como 1000
 SPEED = 0.01
-SENSITIVITY = 0.03
+SENSITIVITY = 0.01
 
 class Camera:
     def __init__(self, app, position=(0, 0, 50), yaw=-90, pitch=0):

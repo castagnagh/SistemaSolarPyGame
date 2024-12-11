@@ -19,6 +19,8 @@ class Texture:
         self.textures['sol'] = self.get_texture(path=self.get_texture_path('Sun.jpg'))
         self.textures['urano'] = self.get_texture(path=self.get_texture_path('2k_uranus.jpg'))
         self.textures['venus'] = self.get_texture(path=self.get_texture_path('venusClouds2.jpg'))
+        self.textures['ovni'] = self.get_texture(path=self.get_texture_path('13884_Diffuse.jpg'))
+        self.textures['nave'] = self.get_texture(path=self.get_texture_path('2k_uranus.jpg'))
 
 
     def get_texture_path(self, texture_name):

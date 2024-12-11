@@ -2,7 +2,12 @@
 
 Este projeto utiliza **Pygame**, **ModernGL**, **PyGLM** (biblioteca de matemática otimizada para gráficos 3D) e **pywavefront** (utilizada especialmente para gerenciar arquivos OBJ) para carregar e renderizar objetos 3D, como um sistema solar, utilizando OpenGL moderno.
 
-<img src="#">
+<img src="imagemMd\image.png">
+
+# Video de demonstração
+
+
+[Demonstração do projeto](https://www.youtube.com/watch?v=XVFlGe-Op7A)
 
 ## Instalação
 
@@ -13,8 +18,8 @@ Siga os passos abaixo para configurar e rodar o projeto.
 Primeiro, clone este repositório para sua máquina local:
 
 ```
-git clone https://github.com/castagnagh/PyGame.git
-cd PyGame
+git clone https://github.com/castagnagh/SistemaSolarPyGame.git
+cd pygame
 ```
 
 ### 2. Instalar as dependências
@@ -43,5 +48,8 @@ Certifique-se de que todos os arquivos OBJ (objetos 3D) estejam no caminho corre
 
 ## Referência
 Este projeto foi desenvolvido com base no tutorial do canal Coder Space:
+
+
+[Let's code 3D Engine in Python. OpenGL Pygame Tutorial](https://www.youtube.com/watch?v=eJDIsFJN4OQ&t=1s&ab_channel=CoderSpace)
 
 Assista ao tutorial para aprender mais sobre o ModernGL e como ele é aplicado no Pygame.

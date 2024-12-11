@@ -21,6 +21,8 @@ class Scene:
         # add(Esfera(app, tex_id='mercurio', pos=(57.9, 0, 0), scale=(0.02, 0.02, 0.02)))
         # add(Esfera(app, tex_id='venus', pos=(108.2, 0, 0), scale=(0.04, 0.04, 0.04)))
         # add(Esfera(app, tex_id='terra', pos=(149.6, 0, 0), scale=(0.05, 0.05, 0.05)))
+        # add(Nave(app, pos=(151.2, 0.5, 0), rot=(-50, 0, -90), scale=(0.005, 0.005, 0.005)))
+
         # add(Esfera(app, tex_id='lua', pos=(154.9, 0, 0), scale=(0.01, 0.01, 0.01)))
         # add(Esfera(app, tex_id='marte', pos=(227.9, 0, 0), scale=(0.02, 0.02, 0.02)))
         # add(Esfera(app, tex_id='jupiter', pos=(778.5, 0, 0), scale=(0.5, 0.5, 0.5)))
@@ -30,6 +32,8 @@ class Scene:
         # add(Esfera(app, tex_id='urano', pos=(2872.5, 0, 0), scale=(0.2, 0.2, 0.2)))
         # add(Esfera(app, tex_id='netuno', pos=(4495.1, 0, 0), scale=(0.2, 0.2, 0.2)))
         # add(Esfera(app, tex_id='plutao', pos=(5906.4, 0, 0), scale=(0.01, 0.01, 0.01)))
+        
+        # add(OVNI(app, tex_id='ovni', pos=(226.9, 0.5, 0), rot=(80, 5, 30), scale=(0.0005, 0.0005, 0.0005)))
 
         ##########################################################################################################################
         #--------------------------- SISTEMA SOLAR COM ROTAÇAO E ESCALA REAL / DISTANCIA FICTICIA ----------------------------------------------------#
@@ -37,8 +41,10 @@ class Scene:
         add(Esfera(app, tex_id='mercurio', pos=(50, 0, 0), scale=(0.02, 0.02, 0.02), rotation_speed=0.0012))  # 58,6 dias
         add(Esfera(app, tex_id='venus', pos=(100, 0, 0), scale=(0.04, 0.04, 0.04), rotation_speed=0.0002))  # 243 dias
         add(Esfera(app, tex_id='terra', pos=(150, 0, 0), scale=(0.05, 0.05, 0.05), rotation_speed=0.1))  # 1 dia
+        add(Nave(app, pos=(151.2, 0.5, 0), rot=(-50, 0, -90), scale=(0.005, 0.005, 0.005)))
         add(Esfera(app, tex_id='lua', pos=(155, 0, 0), scale=(0.01, 0.01, 0.01), rotation_speed=0.004))  # Rotação aproximada da Lua
         add(Esfera(app, tex_id='marte', pos=(200, 0, 0), scale=(0.02, 0.02, 0.02), rotation_speed=0.098))  # 1,03 dias
+        add(OVNI(app, tex_id='ovni', pos=(198.9, 0.5, 0), rot=(80, 5, 30), scale=(0.0005, 0.0005, 0.0005)))
         add(Esfera(app, tex_id='jupiter', pos=(250, 0, 0), scale=(0.5, 0.5, 0.5), rotation_speed=2.44))  # 0,41 dias
 
         add(Saturno(app, tex_id='saturno', pos=(300, 0, 0), rot=(5, 10, 250), scale=(0.02, 0.02, 0.02), rotation_speed=2.08))  # 0,45 dias
@@ -62,8 +68,9 @@ class Scene:
         # add(Esfera(app, tex_id='saturno', orbit_radius=300, orbit_speed=0.97, scale=(0.4, 0.4, 0.4), rotation_speed=2.08))
         # add(Esfera(app, tex_id='urano', orbit_radius=350, orbit_speed=0.68, scale=(0.2, 0.2, 0.2), rotation_speed=0.87))
         # add(Esfera(app, tex_id='netuno', orbit_radius=400, orbit_speed=0.54, scale=(0.2, 0.2, 0.2), rotation_speed=0.94))
-        ##########################################################################################################################
+        #########################################################################################################################
 
     def render (self):
         for obj in self.objects:
             obj.render()
+            

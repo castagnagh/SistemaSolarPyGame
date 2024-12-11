@@ -82,7 +82,7 @@ class Esfera(BaseModel):
         self.program['light.Is'].write(self.app.light.Is)
 
 
-class Saturno(Esfera):
+class Saturno(BaseModel):
     def __init__(self, app, vao_name='saturno', tex_id='saturno', 
                  pos=(0, 0, 0), rot=(5, 5, 10), scale=(1, 1, 1), 
                  rotation_speed=0.0, orbit_radius=0.0, orbit_speed=0.0):
@@ -110,6 +110,67 @@ class Saturno(Esfera):
         self.program['light.Ia'].write(self.app.light.Ia)
         self.program['light.Id'].write(self.app.light.Id)
         self.program['light.Is'].write(self.app.light.Is)
+
+class Nave(BaseModel):
+    def __init__(self, app, vao_name='nave', tex_id='nave', 
+                 pos=(0, 0, 0), rot=(5, 5, 10), scale=(1, 1, 1), 
+                 rotation_speed=0.0, orbit_radius=0.0, orbit_speed=0.0):
+        super().__init__(app, vao_name, tex_id, pos, rot, scale, rotation_speed, orbit_radius, orbit_speed)
+        self.on_init()
+
+    def update(self):
+        super().update()  # Atualiza a rotação e a matriz do modelo
+        self.texture.use()
+        self.program['camPos'].write(self.camera.position)
+        self.program['m_view'].write(self.camera.m_view)
+        self.program['m_model'].write(self.m_model)
+
+    def on_init(self):
+        # Texture
+        self.texture = self.app.mesh.texture.textures[self.tex_id]
+        self.program['u_texture_0'] = 0
+        self.texture.use()
+        # MVP
+        self.program['m_proj'].write(self.camera.m_proj)
+        self.program['m_view'].write(self.camera.m_view)
+        self.program['m_model'].write(self.m_model)
+        # Light
+        self.program['light.position'].write(self.app.light.position)
+        self.program['light.Ia'].write(self.app.light.Ia)
+        self.program['light.Id'].write(self.app.light.Id)
+        self.program['light.Is'].write(self.app.light.Is)
+
+class OVNI(BaseModel):
+    def __init__(self, app, vao_name='ovni', tex_id='ovni', 
+                 pos=(0, 0, 0), rot=(5, 5, 10), scale=(1, 1, 1), 
+                 rotation_speed=0.0, orbit_radius=0.0, orbit_speed=0.0):
+        super().__init__(app, vao_name, tex_id, pos, rot, scale, rotation_speed, orbit_radius, orbit_speed)
+        self.on_init()
+
+    def update(self):
+        super().update()  # Atualiza a rotação e a matriz do modelo
+        self.texture.use()
+        self.program['camPos'].write(self.camera.position)
+        self.program['m_view'].write(self.camera.m_view)
+        self.program['m_model'].write(self.m_model)
+
+    def on_init(self):
+        # Texture
+        self.texture = self.app.mesh.texture.textures[self.tex_id]
+        self.program['u_texture_0'] = 0
+        self.texture.use()
+        # MVP
+        self.program['m_proj'].write(self.camera.m_proj)
+        self.program['m_view'].write(self.camera.m_view)
+        self.program['m_model'].write(self.m_model)
+        # Light
+        self.program['light.position'].write(self.app.light.position)
+        self.program['light.Ia'].write(self.app.light.Ia)
+        self.program['light.Id'].write(self.app.light.Id)
+        self.program['light.Is'].write(self.app.light.Is)
+
+
+
 
 
 
